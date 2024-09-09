@@ -25,7 +25,12 @@ let incomer1 = {
     acbOn: [109, 219],
     acbOff: [138, 219],
     acbTrip: [160, 219],
+    clear: {
+      left: 109,
+      top: 219,
+    },
   },
+
   load1Status: {
     id: "d1",
     loadMCCBSwitch: false,
@@ -35,6 +40,14 @@ let incomer1 = {
     mainLoadOn: [41, 480],
     mainLoadOff: [72, 480],
     triangle: 52,
+    clearUp: {
+      left: 79,
+      top: 304,
+    },
+    clearDown: {
+      left: 41,
+      top: 480,
+    },
   },
   load2Status: {
     id: "d2",
@@ -45,6 +58,14 @@ let incomer1 = {
     mainLoadOn: [159, 480],
     mainLoadOff: [186, 480],
     triangle: 165,
+    clearUp: {
+      left: 196,
+      top: 304,
+    },
+    clearDown: {
+      left: 159,
+      top: 480,
+    },
   },
 };
 let incomer2 = {
@@ -54,6 +75,10 @@ let incomer2 = {
     acbOn: [376, 219],
     acbOff: [403, 219],
     acbTrip: [428, 218],
+    clear: {
+      left: 376,
+      top: 219,
+    },
   },
   load3Status: {
     id: "d3",
@@ -64,6 +89,14 @@ let incomer2 = {
     mainLoadOn: [280, 480],
     mainLoadOff: [306, 480],
     triangle: 282,
+    clearUp: {
+      left: 310,
+      top: 304,
+    },
+    clearDown: {
+      left: 280,
+      top: 480,
+    },
   },
   load4Status: {
     id: "d4",
@@ -74,6 +107,14 @@ let incomer2 = {
     mainLoadOn: [393, 480],
     mainLoadOff: [419, 480],
     triangle: 397,
+    clearUp: {
+      left: 427,
+      top: 304,
+    },
+    clearDown: {
+      left: 393,
+      top: 480,
+    },
   },
 };
 let incomerDG = {
@@ -83,6 +124,10 @@ let incomerDG = {
     acbOn: [751, 219],
     acbOff: [778, 219],
     acbTrip: [803, 219],
+    clear: {
+      left: 751,
+      top: 219,
+    },
   },
   load5Status: {
     id: "d5",
@@ -93,6 +138,14 @@ let incomerDG = {
     mainLoadOn: [604, 480],
     mainLoadOff: [630, 480],
     triangle: 606,
+    clearUp: {
+      left: 631,
+      top: 304,
+    },
+    clearDown: {
+      left: 604,
+      top: 480,
+    },
   },
   load6Status: {
     id: "d6",
@@ -103,6 +156,14 @@ let incomerDG = {
     mainLoadOn: [708, 480],
     mainLoadOff: [736, 480],
     triangle: 718,
+    clearUp: {
+      left: 745,
+      top: 304,
+    },
+    clearDown: {
+      left: 708,
+      top: 480,
+    },
   },
   load7Status: {
     id: "d6",
@@ -113,11 +174,28 @@ let incomerDG = {
     mainLoadOn: [827, 480],
     mainLoadOff: [850, 480],
     triangle: 833,
+    clearUp: {
+      left: 860,
+      top: 304,
+    },
+    clearDown: {
+      left: 827,
+      top: 480,
+    },
   },
 };
 
 let acbBridge = {
-  acb: { id: "slant", acbSwitch: false, acbOn: [515, 232], acbOff: [542, 231] },
+  acb: {
+    id: "slant",
+    acbSwitch: false,
+    acbOn: [515, 232],
+    acbOff: [542, 231],
+    clear: {
+      left: 515,
+      top: 232,
+    },
+  },
 };
 
 function resizeCanvas() {
@@ -172,11 +250,17 @@ function drawLine() {
 }
 
 function drawArc(left, top, color, clearLeft, clearTop) {
-  ctx.clearRect(clearLeft * scaleX - 20, clearTop * scaleY - 20, 50, 50);
+  ctx.clearRect(
+    clearLeft * scaleX - 10,
+    clearTop * scaleY - 10,
+    100 * scaleX,
+    20 * scaleY
+  );
   ctx.beginPath();
   ctx.fillStyle = color;
   ctx.ellipse(left * scaleX, top * scaleY, 5, 9, 0, 0, 4 * Math.PI);
   ctx.fill();
+  ctx.stroke();
 }
 function drawEqTriangle(ctx, side, cx, cy, color) {
   ctx.save();
@@ -336,16 +420,16 @@ function toggleIndicatorACB(acb) {
         acb.acbOn[0],
         acb.acbOn[1],
         "#00ff00",
-        acb.acbOff[0],
-        acb.acbOff[1]
+        acb.clear.left,
+        acb.clear.top
       );
     } else {
       drawArc(
         acb.acbOff[0],
         acb.acbOff[1],
         "#ff0000",
-        acb.acbOn[0],
-        acb.acbOn[1]
+        acb.clear.left,
+        acb.clear.top
       );
     }
     if (incomer1.acb.acbSwitch) {
@@ -353,8 +437,8 @@ function toggleIndicatorACB(acb) {
         incomer1.acb.acbOn[0],
         incomer1.acb.acbOn[1],
         "#00ff00",
-        incomer1.acb.acbOff[0],
-        incomer1.acb.acbOff[1]
+        incomer1.acb.clear.left,
+        incomer1.acb.clear.top
       );
     }
     if (incomer2.acb.acbSwitch) {
@@ -362,8 +446,8 @@ function toggleIndicatorACB(acb) {
         incomer2.acb.acbOn[0],
         incomer2.acb.acbOn[1],
         "#00ff00",
-        incomer2.acb.acbOff[0],
-        incomer2.acb.acbOff[1]
+        incomer2.acb.clear.left,
+        incomer2.acb.clear.top
       );
     }
     if (incomerDG.acb.acbSwitch) {
@@ -371,8 +455,8 @@ function toggleIndicatorACB(acb) {
         incomerDG.acb.acbOn[0],
         incomerDG.acb.acbOn[1],
         "#00ff00",
-        incomerDG.acb.acbOff[0],
-        incomerDG.acb.acbOff[1]
+        incomerDG.acb.clear.left,
+        incomerDG.acb.clear.top
       );
     }
   } else if (trip) {
@@ -382,50 +466,63 @@ function toggleIndicatorACB(acb) {
 
 function toggleIndicatorACBTripped(acb) {
   if (incomer1.acb.acbSwitch) {
-    drawArcForTrip(incomer1.acb.acbTrip[0], incomer1.acb.acbTrip[1], "yellow");
+    drawArcForTrip(
+      incomer1.acb.acbTrip[0],
+      incomer1.acb.acbTrip[1],
+      "yellow",
+      incomer1.acb.clear.left,
+      incomer1.acb.clear.top
+    );
   } else {
     drawArc(
       incomer1.acb.acbOff[0],
       incomer1.acb.acbOff[1],
       "#ff0000",
-      incomer1.acb.acbOn[0],
-      incomer1.acb.acbOn[1]
+      incomer1.acb.clear.left,
+      incomer1.acb.clear.top
     );
   }
   if (incomer2.acb.acbSwitch) {
-    drawArcForTrip(incomer2.acb.acbTrip[0], incomer2.acb.acbTrip[1], "yellow");
+    drawArcForTrip(
+      incomer2.acb.acbTrip[0],
+      incomer2.acb.acbTrip[1],
+      "yellow",
+      incomer2.acb.clear.left,
+      incomer2.acb.clear.top
+    );
   } else {
     drawArc(
       incomer2.acb.acbOff[0],
       incomer2.acb.acbOff[1],
       "#ff0000",
-      incomer2.acb.acbOn[0],
-      incomer2.acb.acbOn[1]
+      incomer2.acb.clear.left,
+      incomer2.acb.clear.top
     );
   }
   if (incomerDG.acb.acbSwitch) {
     drawArcForTrip(
       incomerDG.acb.acbTrip[0],
       incomerDG.acb.acbTrip[1],
-      "yellow"
+      "yellow",
+      incomerDG.acb.clear.left,
+      incomerDG.acb.clear.top
     );
   } else {
     drawArc(
       incomerDG.acb.acbOff[0],
       incomerDG.acb.acbOff[1],
       "#ff0000",
-      incomerDG.acb.acbOn[0],
-      incomerDG.acb.acbOn[1]
+      incomerDG.acb.clear.left,
+      incomerDG.acb.clear.top
     );
   }
   drawArc(
     acbBridge.acb.acbOn[0],
     acbBridge.acb.acbOn[1],
     "#00ff00",
-    acbBridge.acb.acbOff[0],
-    acbBridge.acb.acbOff[1]
+    acbBridge.acb.clear.left,
+    acbBridge.acb.clear.top
   );
-  // }
 }
 function toggleIndicatorLoad(load) {
   if (load.loadMCCBSwitch) {
@@ -433,16 +530,16 @@ function toggleIndicatorLoad(load) {
       load.loadOn[0],
       load.loadOn[1],
       "#00ff00",
-      load.loadOff[0],
-      load.loadOff[1]
+      load.clearUp.left,
+      load.clearUp.top
     );
   } else {
     drawArc(
       load.loadOff[0],
       load.loadOff[1],
       "#ff0000",
-      load.loadOn[0],
-      load.loadOn[1]
+      load.clearUp.left,
+      load.clearUp.top
     );
   }
 }
@@ -453,16 +550,16 @@ function toggleMainLoad(load) {
       load.mainLoadOn[0],
       load.mainLoadOn[1],
       "#00ff00",
-      load.mainLoadOff[0],
-      load.mainLoadOff[1]
+      load.clearDown.left,
+      load.clearDown.top
     );
   } else {
     drawArc(
       load.mainLoadOff[0],
       load.mainLoadOff[1],
       "#ff0000",
-      load.mainLoadOn[0],
-      load.mainLoadOn[1]
+      load.clearDown.left,
+      load.clearDown.top
     );
   }
 }
@@ -627,8 +724,13 @@ function overAllConnectionControl() {
   }
 }
 
-function drawArcForTrip(left, top, color) {
-  ctx.clearRect(left * scaleX - 100, top * scaleY - 20, 100, 50);
+function drawArcForTrip(left, top, color, clearLeft, clearTop) {
+  ctx.clearRect(
+    clearLeft * scaleX - 10,
+    clearTop * scaleY - 10,
+    100 * scaleX,
+    20 * scaleY
+  );
   ctx.beginPath();
   ctx.fillStyle = color;
   ctx.ellipse(left * scaleX, top * scaleY, 5, 9, 0, 0, 4 * Math.PI);

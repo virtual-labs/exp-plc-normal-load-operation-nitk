@@ -1,0 +1,208 @@
+=/pretest.json
+{
+  _: [],
+  f: [
+    '/home/runner/work/exp-plc-normal-load-operation-nitk/exp-plc-normal-load-operation-nitk/experiment/pretest.json'
+  ],
+  files: [
+    '/home/runner/work/exp-plc-normal-load-operation-nitk/exp-plc-normal-load-operation-nitk/experiment/pretest.json'
+  ],
+  c: 'assessment',
+  contentTypes: 'assessment',
+  'content-types': 'assessment',
+  '$0': 'validate'
+}
+/questions/0/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/1/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/2/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/3/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/4/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/5/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/6/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/7/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/8/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/9/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/10/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/11/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/12/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/13/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/14/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/15/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/16/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/17/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/18/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/19/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/20/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/21/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/22/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/23/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+Json Error: must match "then" schema
+Json Error: must match "then" schema
+Failed while validating /home/runner/work/exp-plc-normal-load-operation-nitk/exp-plc-normal-load-operation-nitk/experiment/pretest.json
+Error: Schema is Invalid
+=/posttest.json
+{
+  _: [],
+  f: [
+    '/home/runner/work/exp-plc-normal-load-operation-nitk/exp-plc-normal-load-operation-nitk/experiment/posttest.json'
+  ],
+  files: [
+    '/home/runner/work/exp-plc-normal-load-operation-nitk/exp-plc-normal-load-operation-nitk/experiment/posttest.json'
+  ],
+  c: 'assessment',
+  contentTypes: 'assessment',
+  'content-types': 'assessment',
+  '$0': 'validate'
+}
+/questions/0/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/1/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/2/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/3/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/4/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/5/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/6/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/7/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/8/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/9/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/10/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/11/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/12/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/13/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/14/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/15/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/16/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/17/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/18/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/19/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/20/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/21/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/22/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/23/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/24/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/25/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/26/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/27/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/28/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/29/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/30/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/31/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/32/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/33/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/34/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/35/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/36/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/37/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/38/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/39/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/40/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/41/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/42/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/43/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/44/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/45/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/46/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/47/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/48/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/49/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/50/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/51/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/52/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/53/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/54/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/55/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/56/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/57/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/58/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/59/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/60/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+/questions/61/difficulty: Difficulty can only be: beginner, intermediate or advanced
+
+Json Error: must match "then" schema
+Json Error: must match "then" schema
+Failed while validating /home/runner/work/exp-plc-normal-load-operation-nitk/exp-plc-normal-load-operation-nitk/experiment/posttest.json
+Error: Schema is Invalid

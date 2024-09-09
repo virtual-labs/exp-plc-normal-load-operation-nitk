@@ -1,0 +1,1055 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The maximum generated voltage in power generating stations in advanced countries is 33kV while that in India is _________",
+      "answers": {
+        "a": "6kV",
+        "b": "9kV",
+        "c": "11kV",
+        "d": "44kV"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The transmission lines and feeders are _____________ .",
+      "answers": {
+        "a": "2-phase 2-wire circuit",
+        "b": "3-phase 3-wire circuit",
+        "c": "Both (a) and (b)",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "The transmission lines are _____________",
+      "answers": {
+        "a": "3-phase 4-wire circuits",
+        "b": "2-phase 2-wire circuits",
+        "c": "3-phase 3-wire circuits",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "________ are lines conductors which connect the distribution substations to the areas, to be fed by those distribution substations.",
+      "answers": {
+        "a": "Service mains",
+        "b": "Distributors",
+        "c": "Feeders",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "________ are the terminals which connect the consumer�s terminals to the distributors",
+      "answers": {
+        "a": "Service mains",
+        "b": "Distributors",
+        "c": "Feeders",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "In AC-system ,",
+      "answers": {
+        "a": "Electric power can be generated at high voltage",
+        "b": "Stepping-up and stepping down of an AC voltage can be done easily and efficiently with the help of transformers",
+        "c": "Transformer line construction is comparatively difficult and the amount of copper required is comparatively more",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "In AC system,",
+      "answers": {
+        "a": "There is a need to synchronize the alternators before they are put in parallel",
+        "b": "As a result of skin effect, the resistance of the line is increased",
+        "c": "In order to avoid corona loss and also to provide adequate amount of insulation in case of overhead lines, more spacing between the conductors is required",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Statement 1:- The best method is to use AC system for generation and distribution purpose and DC system for transmission purpose.<br>Statement 2:- The best method is to use DC system for generation and distribution purpose and AC system for transmission purpose.",
+      "answers": {
+        "a": "Statement 1 is true and Statement 2 is false",
+        "b": "Statement 1 is false and Statement 2 is false",
+        "c": "Statement 1 is false and Statement 2 is true",
+        "d": "Statement 1 is false and Statement 2 is false"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "Underground cables are rarely used for",
+      "answers": {
+        "a": "Detection of fault is tough",
+        "b": "Installation costs are very high",
+        "c": "More suitable for short distance",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Important component of overhead lines is",
+      "answers": {
+        "a": "Conductors",
+        "b": "Supports and cross-arms",
+        "c": "Insulators",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "The characteristics that conductors used for transmission and distribution should posses :",
+      "answers": {
+        "a": "High tensile strength and low sensitivity",
+        "b": "Low specific gravity",
+        "c": "Low cost",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Hard drawing of copper __________ electrical conductivity by small amount but it ___________ the tensile strength considerably.",
+      "answers": {
+        "a": "Increases, decreases",
+        "b": "Decreases, increases",
+        "c": "Both increases, decreases and Decreases, increases in some cases",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "Copper conductor is",
+      "answers": {
+        "a": "Homogenous material",
+        "b": "Highly durable and has high scrap value",
+        "c": "It has high current density, so lesser X-sectional area of conductor is required",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Aluminium is ______________ in weight as compared to copper, but has _________ conductivity and tensile strength.",
+      "answers": {
+        "a": "Heavier, Smaller",
+        "b": "Heavier, Greater",
+        "c": "Lighter, Greater",
+        "d": "Lighter, Smaller"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "The sag in aluminium conductors is __________ the copper conductors.",
+      "answers": {
+        "a": "Lesser than",
+        "b": "Equal to",
+        "c": "Greater than",
+        "d": "2 times lesser than"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The advantages of using aluminium conductors steel reinforced over aluminium conductor is ________",
+      "answers": {
+        "a": "Tensile strength is increased",
+        "b": "Skin effect is greatly increased",
+        "c": "Both tensile strength is increased and skin effect is greatly increased",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "Choose the proper set of increases order of mechanical strength of the following line supports :",
+      "answers": {
+        "a": "Wooden poles > steel poles > steel towers > R.C.C poles",
+        "b": "Wooden poles > steel towers > steel poles > R.C.C poles",
+        "c": "Wooden poles > steel poles >R.C.C poles > steel towers",
+        "d": "Wooden poles > R.C.C poles >steel poles > steel towers"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Characteristics of an insulator used in overhead lines are",
+      "answers": {
+        "a": "It should have high electric strength",
+        "b": "High ratio of rapture strength to flash over voltage",
+        "c": "High mechanical strength",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "A good porcelain insulator has compressive strength of about _________ and dielectric strength of _________ of its thickness.",
+      "answers": {
+        "a": "70 N/m2 , 6kV/cm",
+        "b": "700 N/m2 , 6kV/cm",
+        "c": "7000 N/m2 , 6kV/cm",
+        "d": "7000 N/m2 , 60kV/cm"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Glass insulators, can be used up to _________ under normal atmospheric conditions, and in dry atmosphere, it can be used up to __________ .",
+      "answers": {
+        "a": "2.5kV, 5kV",
+        "b": "2.5kV,250kV",
+        "c": "25kV, 250kV",
+        "d": "25kV, 50kV"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Steatite is produced by mixing ___________ with small proton of ________ and ___________.",
+      "answers": {
+        "a": "Hydrated magnesium silicate,carbon,nitrogen",
+        "b": "Hydrated magnesium silicate,carbon,clay",
+        "c": "Hydrated magnesium silicate,nitrogen,clay",
+        "d": "Hydrated magnesium silicate, clay, felspar"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "In a pin type insulator,",
+      "answers": {
+        "a": "Insulators made of glass are generally used for low voltages",
+        "b": "Insulators made of poralain can be used up to a 90kv but are rarely used on lines above 60kV",
+        "c": "Both insulators made of glass are generally used for low voltages and insulators",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The factor affecting the sag in overhead lines are",
+      "answers": {
+        "a": "Weight of the conductor",
+        "b": "Span length",
+        "c": "Temperature",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Due to skin effect, the total resistance of the conductor _________, as the frequency of the current ________ and also with the increases in the diameter of the conductor.",
+      "answers": {
+        "a": "Increases ,Increases ,Increases",
+        "b": "Decreases ,Increases ,Decreases",
+        "c": "Increases ,Decreases ,Increases",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "The skin effect is negligible when the supply frequency is ________ and the conductor diameter is _________.",
+      "answers": {
+        "a": "High, Large",
+        "b": "High, Small",
+        "c": "Low ,Small",
+        "d": "Low ,Large"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The alternating magnetic flues in a conductor caused by the current flowing in a neighbouring conductor gives rise to circulating currents which cause an apparent increases in the resistance of the conductor. This phenomena is called ________ .",
+      "answers": {
+        "a": "Skin effect",
+        "b": "Corona effect",
+        "c": "Proximity effect",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The factor which effect skin and proximity effects are ______________",
+      "answers": {
+        "a": "Frequency of the current",
+        "b": "Permeability of the conductor material",
+        "c": "Size of the conductor and distance between the conductors",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Usually in short transmission lines ___________",
+      "answers": {
+        "a": "Length is less than 50km",
+        "b": "Operating voltage is less than 20kV",
+        "c": "Both length is less than 50km and operating voltage is less than 20kV",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "In medium transmission lines",
+      "answers": {
+        "a": "Length is between 50 km and 160km",
+        "b": "Operating voltage is between 21kV and 100kV",
+        "c": "Both length is between 50 km and 160km and operating voltage is between 21kV and 100kV",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "In long transmission lines",
+      "answers": {
+        "a": "Length is more than 160km",
+        "b": "Operating voltage is above 100kV",
+        "c": "Both length is more than 160km and operating voltage is above 100kV",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "In oil circuit breaker (O.C.B) the range exists between",
+      "answers": {
+        "a": "75MVA at 2.5 kV and 50000MVA at 250kV",
+        "b": "7.5MVA at 2.5 kV and 50000MVA at 250kV",
+        "c": "250MVA at 2.5 kV and 5000MVA at 250kV",
+        "d": "25MVA at 2.5 kV and 5000MVA at 250kV"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Advantages of using Air blast Circuit breakers:",
+      "answers": {
+        "a": "Current chapping",
+        "b": "Sensitivity to restricting voltage",
+        "c": "Short arc duration",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "In SF6 Circuit breaker",
+      "answers": {
+        "a": "No risk of fire",
+        "b": "No reduction of dielectric strength",
+        "c": "Current chopping tendency is minimized",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "The voltage across the contacts during the arcing period is known as _______",
+      "answers": {
+        "a": "Recovery voltage",
+        "b": "Restriking voltage",
+        "c": "Arc voltage",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The transient voltage appearing across the contacts during arc period is called ________",
+      "answers": {
+        "a": "Recovery voltage",
+        "b": "Restriking voltage",
+        "c": "Arc voltage",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "When low inductive current is interrupted by a Circuit breaker and the arc generating force of the Circuit breaker and is more than necessary to interrupt a low magnitude of current, the current will be interrupted before its natural zero instant. It is termed as",
+      "answers": {
+        "a": "Restriking",
+        "b": "Recovery instant",
+        "c": "Current chopping",
+        "d": "Arcing voltage"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "_______ is the r.m.s value of current which the Circuit breaker is capable of carrying continuously at its rated frequency under specified conditions.",
+      "answers": {
+        "a": "Breaking capacity",
+        "b": "Making capacity",
+        "c": "Short-time capacity",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "The peak value of current (including the DC component) during first cycle of current wave after the closure of Circuit breaker is known as __________.",
+      "answers": {
+        "a": "Breaking capacity",
+        "b": "Making capacity",
+        "c": "Short-time capacity",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "__________ is the current (r.m.s value) that a Circuit breaker is capable of breaking under specified conditions and given recovery voltage.",
+      "answers": {
+        "a": "Breaking capacity",
+        "b": "Making capacity",
+        "c": "Short-time capacity",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": " __________ of a Circuit breaker depends upon its ability to withstand the temperature rise and the electromagnetic force effects.",
+      "answers": {
+        "a": "Breaking capacity",
+        "b": "Making capacity",
+        "c": "Short-time capacity",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Advantage of using instrument Transformer is",
+      "answers": {
+        "a": "Standard rated instruments may be used easily",
+        "b": "It provides safety for operating personal",
+        "c": "Both standard rated instruments may be used easily and it provides safety for operating personal",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Instrument transformers are classified as:",
+      "answers": {
+        "a": "Potential transformer",
+        "b": "Current transformer",
+        "c": "Both potential transformer and current transformer",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Potential transformers are made with",
+      "answers": {
+        "a": "Low quality icon core operating at very low flex density so that the magnetizing current may be large",
+        "b": "High quality icon core operating at very high flex density so that the magnetizing current may be large",
+        "c": "High quality icon core operating at very high flex density so that the magnetizing current may be very small",
+        "d": "High quality icon core operating at very low flex density so that the magnetizing current may be very small"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Potential transformers are carefully designed to ensure",
+      "answers": {
+        "a": "Minimum variation of voltage ratio with load and minimum phase shift between input and output voltages",
+        "b": "Minimum variation of voltage ratio with load and maximum phase shift between input and output voltages",
+        "c": "Maximum variation of voltage ratio with load and maximum phase shift between input and output voltages",
+        "d": "Maximum variation of voltage ratio with load and minimum phase shift between input and output voltages"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "A high magnitude alternating current can be measured by a combination of _________ and_________.",
+      "answers": {
+        "a": "Potential transformer and a low range ammeter",
+        "b": "Current transformer and high range ammeter",
+        "c": "Current transformer and low range ammeter",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The current transformer ratio is not equal to the ratio of secondary to primary turns.",
+      "answers": {
+        "a": "The above statement is false",
+        "b": "The above statement is false, because of the effect of magnetizing current",
+        "c": "The above statement is true, because of the effect of magnetizing current",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "_________is used to make sure that an electrical circuit can be completely de-energized for service or maintenance.",
+      "answers": {
+        "a": "Circuit breaker",
+        "b": "Isolator",
+        "c": "Fuse",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "The major difference between an isolates and a circuit broken is that",
+      "answers": {
+        "a": "A Circuit Breaker is an off load device insulated to be opened only after current has been interrupted by some other after control device",
+        "b": "An isolator is an off load device intended to be opened only after current has been interrupted by some other control device",
+        "c": "Both A Circuit Breaker is an off load device insulated to be opened only after current has been interrupted by some other after control device and An isolator is an off load device intended to be opened only after current has been interrupted by some other control device",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "Gas Insulated Switchgear (GIS) offers",
+      "answers": {
+        "a": "High reliability, lower stability and maintenance free feature in much larger space compared with conventional switchgear.",
+        "b": "High reliability, higher safety and maintenance free feature in much larger space compared with conventional switchgear.",
+        "c": "High reliability, lower safety and maintenance free feature in much smaller space compared with conventional switchgear.",
+        "d": "High reliability, higher safety and maintenance free feature in much smaller space compared with conventional switchgear."
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "The space requirement of Gas Insulated Switchgear (GIS) can be less than ______ of the space taken up by an equivalent conventional installation.",
+      "answers": {
+        "a": "5%",
+        "b": "10%",
+        "c": "25%",
+        "d": "40%"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "A ______ is a substation which does not contain transformers and operates only at a single voltage level.",
+      "answers": {
+        "a": "Transmission substation",
+        "b": "Switching substation",
+        "c": "Distribution substation",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "The apparatus used for switching, controlling and protecting the electrical circuit and equipment is known as",
+      "answers": {
+        "a": "Control panels",
+        "b": "Metering panels",
+        "c": "Circuit breakers",
+        "d": "Switchgear"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Switchgear consist of:",
+      "answers": {
+        "a": "Switched, Fuses, CB, isolators",
+        "b": "Relay, control panels, metering panels",
+        "c": "Lightning arrestors, current transformers potential transformer etc",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Functions of switchgear are",
+      "answers": {
+        "a": "To localize the effects of faults by operation of protective equipment and so automatically disconnect faulty point from the system",
+        "b": "To break efficiently the short circuits without giving rise to dangerous conditions",
+        "c": "To facilitate the redistribution of local, inspection and maintenance on the system",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "Essential features of switchgear are",
+      "answers": {
+        "a": "The switchgear must be able to discriminate between faulty and healthy section",
+        "b": "Quick operation and complete reliability",
+        "c": "Provision for manual control and instruments",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": " __________ is a hollow insulating lines through which a conductor may pass .",
+      "answers": {
+        "a": "Circuit breaker",
+        "b": "Isolator",
+        "c": "Bushing",
+        "d": "Feeder"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Small porcelain bushing can be used up to _________",
+      "answers": {
+        "a": "12 kV",
+        "b": "24 kV",
+        "c": "36 kV",
+        "d": "98 kV"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The inside of the bushing may contain __________ and the bushing is often filled with ________ to provide additional insulation.",
+      "answers": {
+        "a": "Copper, mercury",
+        "b": "Copper ,paper",
+        "c": "Paper insulation, oil",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Bus bar can be arranged in ____________",
+      "answers": {
+        "a": "Single bus-bar system",
+        "b": "Double bus-bar system with sectionalisation",
+        "c": "Both single bus-bar system and double bus-bar system with sectionalisation",
+        "d": "None"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The major advantage of single bus-bar system is that fault on one part of the bus'bar or system does not completely shut down the whole station.",
+      "answers": {
+        "a": "False",
+        "b": "True"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": " _________ is a device which is used to switch from one bus to the other without any interruption in power supply and without creating hazardous arcs.",
+      "answers": {
+        "a": "Isolator",
+        "b": "Circuit breaker",
+        "c": "Bus coupler",
+        "d": "Any of the them"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "Lighting arrestor are also called as __________",
+      "answers": {
+        "a": "Capacitive detector",
+        "b": "Charge inhibitor",
+        "c": "Surge arrestor",
+        "d": "All"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    }
+  ]
+}

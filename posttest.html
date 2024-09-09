@@ -1,0 +1,2888 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'NITK',
+        'phase': 'Testing',
+        'expName': 'DEVELOPMENT OF 11KV/433 VOLTS SUBSTATION AUTOMATION USING PLC FOR NORMAL LOAD
+    OPERATION',
+        'expShortName': 'plc-normal-load-operation'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="plc-normal-load-operation">
+    	<meta name="developer-institute" content="NITK">
+    	<meta name="learning-unit" content="DEVELOPMENT OF 11KV/433 VOLTS SUBSTATION AUTOMATION USING PLC FOR NORMAL LOAD
+    OPERATION">
+    	<meta name="task-name" content="Quiz">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    <link rel="stylesheet" href="./assets/katex_assets/katex.min.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center justify-content-end">
+            <div class="svc-rating-display">
+                <rating-display spreadsheetid="1x12nhpp0QvnsA6x-O1sV4IA9SAbfVsq_wiexWkutOmU" sheetname="Experiment-Database" columnname="Experiment Short Name" columnvalue="plc-normal-load-operation" imagesdirectory="./plugins/svc-rating/images/">
+                </rating-display>
+            </div>      <div class="svc-rating-submit">
+                <rating-submit title="Rate" this="" experiment="">
+                </rating-submit>
+            </div>      <bug-report id="bug-report" title="[BUG REPORT] DEVELOPMENT OF 11KV/433 VOLTS SUBSTATION AUTOMATION USING PLC FOR NORMAL LOAD
+      OPERATION" page-type="assesment" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;NITK&quot;,&quot;expname&quot;:&quot;DEVELOPMENT OF 11KV/433 VOLTS SUBSTATION AUTOMATION USING PLC FOR NORMAL LOAD\nOPERATION&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" button_style="border: none; color: #fff; background-color: #288ec8; text-align: center; font-size: 1.05rem; border-radius: 1em;padding: 0.6em 1.2em; margin: 0 10px" position="override" custom_button_class="v-button"></bug-report>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+          <div class="row py-4 px-4 breadcrumbs">
+          	<div class="title is-4 tools">Tools</div>
+          	<span class="mx-2">
+          		<i aria-hidden="true" class="fa fa-angle-right"></i>
+          	</span>
+          	<a href="performance-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Performance Tool</button>
+          	</a>
+          	<a href="validator-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Validation Tool</button>
+          	</a>
+          </div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2 ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Self Evaluation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="assignment.html" class="p-2 ">
+                                      Assignment
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2  current-item ">
+                                      Quiz
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="videos.html" class="p-2 ">
+                                      Videos
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2 ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Self Evaluation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="assignment.html" class="p-2 ">
+                        Assignment
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2  current-item ">
+                        Quiz
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="videos.html" class="p-2 ">
+                        Videos
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="development-of-11kv433-volts-substation-automation-using-plc-for-normal-load-operation">Development of 11KV/433 volts substation automation using PLC for normal load operation</h2>
+          
+            </div>
+                  <div id="difficulty-container" style="border-bottom: 1px solid #eaecef; padding-bottom: .3em; margin: 0" class="row">
+                    <div id="difficulty-label" class="col-12 col-md-3" style="display:none"><strong>Choose difficulty: </strong></div>
+                    <div class="form-check col-12 col-md-3" style="display:none">
+                      <input id="beginner" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        <strong>Beginner</strong>
+                      </label>
+                    </div>
+                    <div class="form-check col-12 col-md-3" style="display:none">
+                      <input id="intermediate" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        <strong>Intermediate</strong>
+                      </label>
+                    </div>
+                    <div class="form-check col-12 col-md-3" style="display:none">
+                      <input id="advanced" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        <strong>Advanced</strong>
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div id="quiz" class="versiontrue" style="margin-top: 1rem">
+                
+                
+                  <div class="question ">
+                    The maximum generated voltage in power generating stations in advanced countries is 33kV while that in India is _________
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer0a">
+                      <label>
+                        <input type="radio" name="question0" value="a">
+                        a: 6kV
+                      </label>
+                      <a href="#" id="explanation0a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer0b">
+                      <label>
+                        <input type="radio" name="question0" value="b">
+                        b: 9kV
+                      </label>
+                      <a href="#" id="explanation0b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer0c">
+                      <label>
+                        <input type="radio" name="question0" value="c">
+                        c: 11kV
+                      </label>
+                      <a href="#" id="explanation0c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer0d">
+                      <label>
+                        <input type="radio" name="question0" value="d">
+                        d: 44kV
+                      </label>
+                      <a href="#" id="explanation0d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The transmission lines and feeders are _____________ .
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer1a">
+                      <label>
+                        <input type="radio" name="question1" value="a">
+                        a: 2-phase 2-wire circuit
+                      </label>
+                      <a href="#" id="explanation1a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer1b">
+                      <label>
+                        <input type="radio" name="question1" value="b">
+                        b: 3-phase 3-wire circuit
+                      </label>
+                      <a href="#" id="explanation1b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer1c">
+                      <label>
+                        <input type="radio" name="question1" value="c">
+                        c: Both (a) and (b)
+                      </label>
+                      <a href="#" id="explanation1c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer1d">
+                      <label>
+                        <input type="radio" name="question1" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation1d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The transmission lines are _____________
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer2a">
+                      <label>
+                        <input type="radio" name="question2" value="a">
+                        a: 3-phase 4-wire circuits
+                      </label>
+                      <a href="#" id="explanation2a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer2b">
+                      <label>
+                        <input type="radio" name="question2" value="b">
+                        b: 2-phase 2-wire circuits
+                      </label>
+                      <a href="#" id="explanation2b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer2c">
+                      <label>
+                        <input type="radio" name="question2" value="c">
+                        c: 3-phase 3-wire circuits
+                      </label>
+                      <a href="#" id="explanation2c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer2d">
+                      <label>
+                        <input type="radio" name="question2" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation2d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    ________ are lines conductors which connect the distribution substations to the areas, to be fed by those distribution substations.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer3a">
+                      <label>
+                        <input type="radio" name="question3" value="a">
+                        a: Service mains
+                      </label>
+                      <a href="#" id="explanation3a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3b">
+                      <label>
+                        <input type="radio" name="question3" value="b">
+                        b: Distributors
+                      </label>
+                      <a href="#" id="explanation3b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3c">
+                      <label>
+                        <input type="radio" name="question3" value="c">
+                        c: Feeders
+                      </label>
+                      <a href="#" id="explanation3c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3d">
+                      <label>
+                        <input type="radio" name="question3" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation3d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    ________ are the terminals which connect the consumer�s terminals to the distributors
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer4a">
+                      <label>
+                        <input type="radio" name="question4" value="a">
+                        a: Service mains
+                      </label>
+                      <a href="#" id="explanation4a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4b">
+                      <label>
+                        <input type="radio" name="question4" value="b">
+                        b: Distributors
+                      </label>
+                      <a href="#" id="explanation4b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4c">
+                      <label>
+                        <input type="radio" name="question4" value="c">
+                        c: Feeders
+                      </label>
+                      <a href="#" id="explanation4c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4d">
+                      <label>
+                        <input type="radio" name="question4" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation4d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    In AC-system ,
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer5a">
+                      <label>
+                        <input type="radio" name="question5" value="a">
+                        a: Electric power can be generated at high voltage
+                      </label>
+                      <a href="#" id="explanation5a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5b">
+                      <label>
+                        <input type="radio" name="question5" value="b">
+                        b: Stepping-up and stepping down of an AC voltage can be done easily and efficiently with the help of transformers
+                      </label>
+                      <a href="#" id="explanation5b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5c">
+                      <label>
+                        <input type="radio" name="question5" value="c">
+                        c: Transformer line construction is comparatively difficult and the amount of copper required is comparatively more
+                      </label>
+                      <a href="#" id="explanation5c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5d">
+                      <label>
+                        <input type="radio" name="question5" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation5d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    In AC system,
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer6a">
+                      <label>
+                        <input type="radio" name="question6" value="a">
+                        a: There is a need to synchronize the alternators before they are put in parallel
+                      </label>
+                      <a href="#" id="explanation6a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer6b">
+                      <label>
+                        <input type="radio" name="question6" value="b">
+                        b: As a result of skin effect, the resistance of the line is increased
+                      </label>
+                      <a href="#" id="explanation6b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer6c">
+                      <label>
+                        <input type="radio" name="question6" value="c">
+                        c: In order to avoid corona loss and also to provide adequate amount of insulation in case of overhead lines, more spacing between the conductors is required
+                      </label>
+                      <a href="#" id="explanation6c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer6d">
+                      <label>
+                        <input type="radio" name="question6" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation6d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Statement 1:- The best method is to use AC system for generation and distribution purpose and DC system for transmission purpose.<br>Statement 2:- The best method is to use DC system for generation and distribution purpose and AC system for transmission purpose.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer7a">
+                      <label>
+                        <input type="radio" name="question7" value="a">
+                        a: Statement 1 is true and Statement 2 is false
+                      </label>
+                      <a href="#" id="explanation7a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer7b">
+                      <label>
+                        <input type="radio" name="question7" value="b">
+                        b: Statement 1 is false and Statement 2 is false
+                      </label>
+                      <a href="#" id="explanation7b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer7c">
+                      <label>
+                        <input type="radio" name="question7" value="c">
+                        c: Statement 1 is false and Statement 2 is true
+                      </label>
+                      <a href="#" id="explanation7c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer7d">
+                      <label>
+                        <input type="radio" name="question7" value="d">
+                        d: Statement 1 is false and Statement 2 is false
+                      </label>
+                      <a href="#" id="explanation7d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Underground cables are rarely used for
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer8a">
+                      <label>
+                        <input type="radio" name="question8" value="a">
+                        a: Detection of fault is tough
+                      </label>
+                      <a href="#" id="explanation8a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer8b">
+                      <label>
+                        <input type="radio" name="question8" value="b">
+                        b: Installation costs are very high
+                      </label>
+                      <a href="#" id="explanation8b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer8c">
+                      <label>
+                        <input type="radio" name="question8" value="c">
+                        c: More suitable for short distance
+                      </label>
+                      <a href="#" id="explanation8c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer8d">
+                      <label>
+                        <input type="radio" name="question8" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation8d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Important component of overhead lines is
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer9a">
+                      <label>
+                        <input type="radio" name="question9" value="a">
+                        a: Conductors
+                      </label>
+                      <a href="#" id="explanation9a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer9b">
+                      <label>
+                        <input type="radio" name="question9" value="b">
+                        b: Supports and cross-arms
+                      </label>
+                      <a href="#" id="explanation9b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer9c">
+                      <label>
+                        <input type="radio" name="question9" value="c">
+                        c: Insulators
+                      </label>
+                      <a href="#" id="explanation9c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer9d">
+                      <label>
+                        <input type="radio" name="question9" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation9d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The characteristics that conductors used for transmission and distribution should posses :
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer10a">
+                      <label>
+                        <input type="radio" name="question10" value="a">
+                        a: High tensile strength and low sensitivity
+                      </label>
+                      <a href="#" id="explanation10a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer10b">
+                      <label>
+                        <input type="radio" name="question10" value="b">
+                        b: Low specific gravity
+                      </label>
+                      <a href="#" id="explanation10b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer10c">
+                      <label>
+                        <input type="radio" name="question10" value="c">
+                        c: Low cost
+                      </label>
+                      <a href="#" id="explanation10c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer10d">
+                      <label>
+                        <input type="radio" name="question10" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation10d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Hard drawing of copper __________ electrical conductivity by small amount but it ___________ the tensile strength considerably.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer11a">
+                      <label>
+                        <input type="radio" name="question11" value="a">
+                        a: Increases, decreases
+                      </label>
+                      <a href="#" id="explanation11a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer11b">
+                      <label>
+                        <input type="radio" name="question11" value="b">
+                        b: Decreases, increases
+                      </label>
+                      <a href="#" id="explanation11b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer11c">
+                      <label>
+                        <input type="radio" name="question11" value="c">
+                        c: Both increases, decreases and Decreases, increases in some cases
+                      </label>
+                      <a href="#" id="explanation11c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer11d">
+                      <label>
+                        <input type="radio" name="question11" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation11d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Copper conductor is
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer12a">
+                      <label>
+                        <input type="radio" name="question12" value="a">
+                        a: Homogenous material
+                      </label>
+                      <a href="#" id="explanation12a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer12b">
+                      <label>
+                        <input type="radio" name="question12" value="b">
+                        b: Highly durable and has high scrap value
+                      </label>
+                      <a href="#" id="explanation12b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer12c">
+                      <label>
+                        <input type="radio" name="question12" value="c">
+                        c: It has high current density, so lesser X-sectional area of conductor is required
+                      </label>
+                      <a href="#" id="explanation12c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer12d">
+                      <label>
+                        <input type="radio" name="question12" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation12d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Aluminium is ______________ in weight as compared to copper, but has _________ conductivity and tensile strength.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer13a">
+                      <label>
+                        <input type="radio" name="question13" value="a">
+                        a: Heavier, Smaller
+                      </label>
+                      <a href="#" id="explanation13a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer13b">
+                      <label>
+                        <input type="radio" name="question13" value="b">
+                        b: Heavier, Greater
+                      </label>
+                      <a href="#" id="explanation13b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer13c">
+                      <label>
+                        <input type="radio" name="question13" value="c">
+                        c: Lighter, Greater
+                      </label>
+                      <a href="#" id="explanation13c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer13d">
+                      <label>
+                        <input type="radio" name="question13" value="d">
+                        d: Lighter, Smaller
+                      </label>
+                      <a href="#" id="explanation13d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The sag in aluminium conductors is __________ the copper conductors.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer14a">
+                      <label>
+                        <input type="radio" name="question14" value="a">
+                        a: Lesser than
+                      </label>
+                      <a href="#" id="explanation14a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer14b">
+                      <label>
+                        <input type="radio" name="question14" value="b">
+                        b: Equal to
+                      </label>
+                      <a href="#" id="explanation14b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer14c">
+                      <label>
+                        <input type="radio" name="question14" value="c">
+                        c: Greater than
+                      </label>
+                      <a href="#" id="explanation14c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer14d">
+                      <label>
+                        <input type="radio" name="question14" value="d">
+                        d: 2 times lesser than
+                      </label>
+                      <a href="#" id="explanation14d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The advantages of using aluminium conductors steel reinforced over aluminium conductor is ________
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer15a">
+                      <label>
+                        <input type="radio" name="question15" value="a">
+                        a: Tensile strength is increased
+                      </label>
+                      <a href="#" id="explanation15a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer15b">
+                      <label>
+                        <input type="radio" name="question15" value="b">
+                        b: Skin effect is greatly increased
+                      </label>
+                      <a href="#" id="explanation15b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer15c">
+                      <label>
+                        <input type="radio" name="question15" value="c">
+                        c: Both tensile strength is increased and skin effect is greatly increased
+                      </label>
+                      <a href="#" id="explanation15c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer15d">
+                      <label>
+                        <input type="radio" name="question15" value="d">
+                        d: None of the above
+                      </label>
+                      <a href="#" id="explanation15d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Choose the proper set of increases order of mechanical strength of the following line supports :
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer16a">
+                      <label>
+                        <input type="radio" name="question16" value="a">
+                        a: Wooden poles &gt; steel poles &gt; steel towers &gt; R.C.C poles
+                      </label>
+                      <a href="#" id="explanation16a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer16b">
+                      <label>
+                        <input type="radio" name="question16" value="b">
+                        b: Wooden poles &gt; steel towers &gt; steel poles &gt; R.C.C poles
+                      </label>
+                      <a href="#" id="explanation16b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer16c">
+                      <label>
+                        <input type="radio" name="question16" value="c">
+                        c: Wooden poles &gt; steel poles &gt;R.C.C poles &gt; steel towers
+                      </label>
+                      <a href="#" id="explanation16c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer16d">
+                      <label>
+                        <input type="radio" name="question16" value="d">
+                        d: Wooden poles &gt; R.C.C poles &gt;steel poles &gt; steel towers
+                      </label>
+                      <a href="#" id="explanation16d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Characteristics of an insulator used in overhead lines are
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer17a">
+                      <label>
+                        <input type="radio" name="question17" value="a">
+                        a: It should have high electric strength
+                      </label>
+                      <a href="#" id="explanation17a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer17b">
+                      <label>
+                        <input type="radio" name="question17" value="b">
+                        b: High ratio of rapture strength to flash over voltage
+                      </label>
+                      <a href="#" id="explanation17b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer17c">
+                      <label>
+                        <input type="radio" name="question17" value="c">
+                        c: High mechanical strength
+                      </label>
+                      <a href="#" id="explanation17c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer17d">
+                      <label>
+                        <input type="radio" name="question17" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation17d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    A good porcelain insulator has compressive strength of about _________ and dielectric strength of _________ of its thickness.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer18a">
+                      <label>
+                        <input type="radio" name="question18" value="a">
+                        a: 70 N/m2 , 6kV/cm
+                      </label>
+                      <a href="#" id="explanation18a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer18b">
+                      <label>
+                        <input type="radio" name="question18" value="b">
+                        b: 700 N/m2 , 6kV/cm
+                      </label>
+                      <a href="#" id="explanation18b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer18c">
+                      <label>
+                        <input type="radio" name="question18" value="c">
+                        c: 7000 N/m2 , 6kV/cm
+                      </label>
+                      <a href="#" id="explanation18c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer18d">
+                      <label>
+                        <input type="radio" name="question18" value="d">
+                        d: 7000 N/m2 , 60kV/cm
+                      </label>
+                      <a href="#" id="explanation18d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Glass insulators, can be used up to _________ under normal atmospheric conditions, and in dry atmosphere, it can be used up to __________ .
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer19a">
+                      <label>
+                        <input type="radio" name="question19" value="a">
+                        a: 2.5kV, 5kV
+                      </label>
+                      <a href="#" id="explanation19a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer19b">
+                      <label>
+                        <input type="radio" name="question19" value="b">
+                        b: 2.5kV,250kV
+                      </label>
+                      <a href="#" id="explanation19b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer19c">
+                      <label>
+                        <input type="radio" name="question19" value="c">
+                        c: 25kV, 250kV
+                      </label>
+                      <a href="#" id="explanation19c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer19d">
+                      <label>
+                        <input type="radio" name="question19" value="d">
+                        d: 25kV, 50kV
+                      </label>
+                      <a href="#" id="explanation19d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Steatite is produced by mixing ___________ with small proton of ________ and ___________.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer20a">
+                      <label>
+                        <input type="radio" name="question20" value="a">
+                        a: Hydrated magnesium silicate,carbon,nitrogen
+                      </label>
+                      <a href="#" id="explanation20a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer20b">
+                      <label>
+                        <input type="radio" name="question20" value="b">
+                        b: Hydrated magnesium silicate,carbon,clay
+                      </label>
+                      <a href="#" id="explanation20b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer20c">
+                      <label>
+                        <input type="radio" name="question20" value="c">
+                        c: Hydrated magnesium silicate,nitrogen,clay
+                      </label>
+                      <a href="#" id="explanation20c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer20d">
+                      <label>
+                        <input type="radio" name="question20" value="d">
+                        d: Hydrated magnesium silicate, clay, felspar
+                      </label>
+                      <a href="#" id="explanation20d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    In a pin type insulator,
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer21a">
+                      <label>
+                        <input type="radio" name="question21" value="a">
+                        a: Insulators made of glass are generally used for low voltages
+                      </label>
+                      <a href="#" id="explanation21a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer21b">
+                      <label>
+                        <input type="radio" name="question21" value="b">
+                        b: Insulators made of poralain can be used up to a 90kv but are rarely used on lines above 60kV
+                      </label>
+                      <a href="#" id="explanation21b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer21c">
+                      <label>
+                        <input type="radio" name="question21" value="c">
+                        c: Both insulators made of glass are generally used for low voltages and insulators
+                      </label>
+                      <a href="#" id="explanation21c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer21d">
+                      <label>
+                        <input type="radio" name="question21" value="d">
+                        d: None of the above
+                      </label>
+                      <a href="#" id="explanation21d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The factor affecting the sag in overhead lines are
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer22a">
+                      <label>
+                        <input type="radio" name="question22" value="a">
+                        a: Weight of the conductor
+                      </label>
+                      <a href="#" id="explanation22a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer22b">
+                      <label>
+                        <input type="radio" name="question22" value="b">
+                        b: Span length
+                      </label>
+                      <a href="#" id="explanation22b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer22c">
+                      <label>
+                        <input type="radio" name="question22" value="c">
+                        c: Temperature
+                      </label>
+                      <a href="#" id="explanation22c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer22d">
+                      <label>
+                        <input type="radio" name="question22" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation22d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Due to skin effect, the total resistance of the conductor _________, as the frequency of the current ________ and also with the increases in the diameter of the conductor.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer23a">
+                      <label>
+                        <input type="radio" name="question23" value="a">
+                        a: Increases ,Increases ,Increases
+                      </label>
+                      <a href="#" id="explanation23a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer23b">
+                      <label>
+                        <input type="radio" name="question23" value="b">
+                        b: Decreases ,Increases ,Decreases
+                      </label>
+                      <a href="#" id="explanation23b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer23c">
+                      <label>
+                        <input type="radio" name="question23" value="c">
+                        c: Increases ,Decreases ,Increases
+                      </label>
+                      <a href="#" id="explanation23c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer23d">
+                      <label>
+                        <input type="radio" name="question23" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation23d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The skin effect is negligible when the supply frequency is ________ and the conductor diameter is _________.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer24a">
+                      <label>
+                        <input type="radio" name="question24" value="a">
+                        a: High, Large
+                      </label>
+                      <a href="#" id="explanation24a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer24b">
+                      <label>
+                        <input type="radio" name="question24" value="b">
+                        b: High, Small
+                      </label>
+                      <a href="#" id="explanation24b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer24c">
+                      <label>
+                        <input type="radio" name="question24" value="c">
+                        c: Low ,Small
+                      </label>
+                      <a href="#" id="explanation24c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer24d">
+                      <label>
+                        <input type="radio" name="question24" value="d">
+                        d: Low ,Large
+                      </label>
+                      <a href="#" id="explanation24d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The alternating magnetic flues in a conductor caused by the current flowing in a neighbouring conductor gives rise to circulating currents which cause an apparent increases in the resistance of the conductor. This phenomena is called ________ .
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer25a">
+                      <label>
+                        <input type="radio" name="question25" value="a">
+                        a: Skin effect
+                      </label>
+                      <a href="#" id="explanation25a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer25b">
+                      <label>
+                        <input type="radio" name="question25" value="b">
+                        b: Corona effect
+                      </label>
+                      <a href="#" id="explanation25b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer25c">
+                      <label>
+                        <input type="radio" name="question25" value="c">
+                        c: Proximity effect
+                      </label>
+                      <a href="#" id="explanation25c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer25d">
+                      <label>
+                        <input type="radio" name="question25" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation25d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The factor which effect skin and proximity effects are ______________
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer26a">
+                      <label>
+                        <input type="radio" name="question26" value="a">
+                        a: Frequency of the current
+                      </label>
+                      <a href="#" id="explanation26a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer26b">
+                      <label>
+                        <input type="radio" name="question26" value="b">
+                        b: Permeability of the conductor material
+                      </label>
+                      <a href="#" id="explanation26b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer26c">
+                      <label>
+                        <input type="radio" name="question26" value="c">
+                        c: Size of the conductor and distance between the conductors
+                      </label>
+                      <a href="#" id="explanation26c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer26d">
+                      <label>
+                        <input type="radio" name="question26" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation26d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Usually in short transmission lines ___________
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer27a">
+                      <label>
+                        <input type="radio" name="question27" value="a">
+                        a: Length is less than 50km
+                      </label>
+                      <a href="#" id="explanation27a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer27b">
+                      <label>
+                        <input type="radio" name="question27" value="b">
+                        b: Operating voltage is less than 20kV
+                      </label>
+                      <a href="#" id="explanation27b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer27c">
+                      <label>
+                        <input type="radio" name="question27" value="c">
+                        c: Both length is less than 50km and operating voltage is less than 20kV
+                      </label>
+                      <a href="#" id="explanation27c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer27d">
+                      <label>
+                        <input type="radio" name="question27" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation27d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    In medium transmission lines
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer28a">
+                      <label>
+                        <input type="radio" name="question28" value="a">
+                        a: Length is between 50 km and 160km
+                      </label>
+                      <a href="#" id="explanation28a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer28b">
+                      <label>
+                        <input type="radio" name="question28" value="b">
+                        b: Operating voltage is between 21kV and 100kV
+                      </label>
+                      <a href="#" id="explanation28b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer28c">
+                      <label>
+                        <input type="radio" name="question28" value="c">
+                        c: Both length is between 50 km and 160km and operating voltage is between 21kV and 100kV
+                      </label>
+                      <a href="#" id="explanation28c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer28d">
+                      <label>
+                        <input type="radio" name="question28" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation28d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    In long transmission lines
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer29a">
+                      <label>
+                        <input type="radio" name="question29" value="a">
+                        a: Length is more than 160km
+                      </label>
+                      <a href="#" id="explanation29a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer29b">
+                      <label>
+                        <input type="radio" name="question29" value="b">
+                        b: Operating voltage is above 100kV
+                      </label>
+                      <a href="#" id="explanation29b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer29c">
+                      <label>
+                        <input type="radio" name="question29" value="c">
+                        c: Both length is more than 160km and operating voltage is above 100kV
+                      </label>
+                      <a href="#" id="explanation29c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer29d">
+                      <label>
+                        <input type="radio" name="question29" value="d">
+                        d: None of the above
+                      </label>
+                      <a href="#" id="explanation29d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    In oil circuit breaker (O.C.B) the range exists between
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer30a">
+                      <label>
+                        <input type="radio" name="question30" value="a">
+                        a: 75MVA at 2.5 kV and 50000MVA at 250kV
+                      </label>
+                      <a href="#" id="explanation30a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer30b">
+                      <label>
+                        <input type="radio" name="question30" value="b">
+                        b: 7.5MVA at 2.5 kV and 50000MVA at 250kV
+                      </label>
+                      <a href="#" id="explanation30b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer30c">
+                      <label>
+                        <input type="radio" name="question30" value="c">
+                        c: 250MVA at 2.5 kV and 5000MVA at 250kV
+                      </label>
+                      <a href="#" id="explanation30c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer30d">
+                      <label>
+                        <input type="radio" name="question30" value="d">
+                        d: 25MVA at 2.5 kV and 5000MVA at 250kV
+                      </label>
+                      <a href="#" id="explanation30d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Advantages of using Air blast Circuit breakers:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer31a">
+                      <label>
+                        <input type="radio" name="question31" value="a">
+                        a: Current chapping
+                      </label>
+                      <a href="#" id="explanation31a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer31b">
+                      <label>
+                        <input type="radio" name="question31" value="b">
+                        b: Sensitivity to restricting voltage
+                      </label>
+                      <a href="#" id="explanation31b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer31c">
+                      <label>
+                        <input type="radio" name="question31" value="c">
+                        c: Short arc duration
+                      </label>
+                      <a href="#" id="explanation31c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer31d">
+                      <label>
+                        <input type="radio" name="question31" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation31d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    In SF6 Circuit breaker
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer32a">
+                      <label>
+                        <input type="radio" name="question32" value="a">
+                        a: No risk of fire
+                      </label>
+                      <a href="#" id="explanation32a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer32b">
+                      <label>
+                        <input type="radio" name="question32" value="b">
+                        b: No reduction of dielectric strength
+                      </label>
+                      <a href="#" id="explanation32b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer32c">
+                      <label>
+                        <input type="radio" name="question32" value="c">
+                        c: Current chopping tendency is minimized
+                      </label>
+                      <a href="#" id="explanation32c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer32d">
+                      <label>
+                        <input type="radio" name="question32" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation32d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The voltage across the contacts during the arcing period is known as _______
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer33a">
+                      <label>
+                        <input type="radio" name="question33" value="a">
+                        a: Recovery voltage
+                      </label>
+                      <a href="#" id="explanation33a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer33b">
+                      <label>
+                        <input type="radio" name="question33" value="b">
+                        b: Restriking voltage
+                      </label>
+                      <a href="#" id="explanation33b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer33c">
+                      <label>
+                        <input type="radio" name="question33" value="c">
+                        c: Arc voltage
+                      </label>
+                      <a href="#" id="explanation33c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer33d">
+                      <label>
+                        <input type="radio" name="question33" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation33d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The transient voltage appearing across the contacts during arc period is called ________
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer34a">
+                      <label>
+                        <input type="radio" name="question34" value="a">
+                        a: Recovery voltage
+                      </label>
+                      <a href="#" id="explanation34a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer34b">
+                      <label>
+                        <input type="radio" name="question34" value="b">
+                        b: Restriking voltage
+                      </label>
+                      <a href="#" id="explanation34b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer34c">
+                      <label>
+                        <input type="radio" name="question34" value="c">
+                        c: Arc voltage
+                      </label>
+                      <a href="#" id="explanation34c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer34d">
+                      <label>
+                        <input type="radio" name="question34" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation34d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    When low inductive current is interrupted by a Circuit breaker and the arc generating force of the Circuit breaker and is more than necessary to interrupt a low magnitude of current, the current will be interrupted before its natural zero instant. It is termed as
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer35a">
+                      <label>
+                        <input type="radio" name="question35" value="a">
+                        a: Restriking
+                      </label>
+                      <a href="#" id="explanation35a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer35b">
+                      <label>
+                        <input type="radio" name="question35" value="b">
+                        b: Recovery instant
+                      </label>
+                      <a href="#" id="explanation35b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer35c">
+                      <label>
+                        <input type="radio" name="question35" value="c">
+                        c: Current chopping
+                      </label>
+                      <a href="#" id="explanation35c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer35d">
+                      <label>
+                        <input type="radio" name="question35" value="d">
+                        d: Arcing voltage
+                      </label>
+                      <a href="#" id="explanation35d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    _______ is the r.m.s value of current which the Circuit breaker is capable of carrying continuously at its rated frequency under specified conditions.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer36a">
+                      <label>
+                        <input type="radio" name="question36" value="a">
+                        a: Breaking capacity
+                      </label>
+                      <a href="#" id="explanation36a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer36b">
+                      <label>
+                        <input type="radio" name="question36" value="b">
+                        b: Making capacity
+                      </label>
+                      <a href="#" id="explanation36b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer36c">
+                      <label>
+                        <input type="radio" name="question36" value="c">
+                        c: Short-time capacity
+                      </label>
+                      <a href="#" id="explanation36c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer36d">
+                      <label>
+                        <input type="radio" name="question36" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation36d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The peak value of current (including the DC component) during first cycle of current wave after the closure of Circuit breaker is known as __________.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer37a">
+                      <label>
+                        <input type="radio" name="question37" value="a">
+                        a: Breaking capacity
+                      </label>
+                      <a href="#" id="explanation37a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer37b">
+                      <label>
+                        <input type="radio" name="question37" value="b">
+                        b: Making capacity
+                      </label>
+                      <a href="#" id="explanation37b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer37c">
+                      <label>
+                        <input type="radio" name="question37" value="c">
+                        c: Short-time capacity
+                      </label>
+                      <a href="#" id="explanation37c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer37d">
+                      <label>
+                        <input type="radio" name="question37" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation37d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    __________ is the current (r.m.s value) that a Circuit breaker is capable of breaking under specified conditions and given recovery voltage.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer38a">
+                      <label>
+                        <input type="radio" name="question38" value="a">
+                        a: Breaking capacity
+                      </label>
+                      <a href="#" id="explanation38a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer38b">
+                      <label>
+                        <input type="radio" name="question38" value="b">
+                        b: Making capacity
+                      </label>
+                      <a href="#" id="explanation38b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer38c">
+                      <label>
+                        <input type="radio" name="question38" value="c">
+                        c: Short-time capacity
+                      </label>
+                      <a href="#" id="explanation38c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer38d">
+                      <label>
+                        <input type="radio" name="question38" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation38d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                     __________ of a Circuit breaker depends upon its ability to withstand the temperature rise and the electromagnetic force effects.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer39a">
+                      <label>
+                        <input type="radio" name="question39" value="a">
+                        a: Breaking capacity
+                      </label>
+                      <a href="#" id="explanation39a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer39b">
+                      <label>
+                        <input type="radio" name="question39" value="b">
+                        b: Making capacity
+                      </label>
+                      <a href="#" id="explanation39b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer39c">
+                      <label>
+                        <input type="radio" name="question39" value="c">
+                        c: Short-time capacity
+                      </label>
+                      <a href="#" id="explanation39c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer39d">
+                      <label>
+                        <input type="radio" name="question39" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation39d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Advantage of using instrument Transformer is
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer40a">
+                      <label>
+                        <input type="radio" name="question40" value="a">
+                        a: Standard rated instruments may be used easily
+                      </label>
+                      <a href="#" id="explanation40a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer40b">
+                      <label>
+                        <input type="radio" name="question40" value="b">
+                        b: It provides safety for operating personal
+                      </label>
+                      <a href="#" id="explanation40b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer40c">
+                      <label>
+                        <input type="radio" name="question40" value="c">
+                        c: Both standard rated instruments may be used easily and it provides safety for operating personal
+                      </label>
+                      <a href="#" id="explanation40c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer40d">
+                      <label>
+                        <input type="radio" name="question40" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation40d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Instrument transformers are classified as:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer41a">
+                      <label>
+                        <input type="radio" name="question41" value="a">
+                        a: Potential transformer
+                      </label>
+                      <a href="#" id="explanation41a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer41b">
+                      <label>
+                        <input type="radio" name="question41" value="b">
+                        b: Current transformer
+                      </label>
+                      <a href="#" id="explanation41b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer41c">
+                      <label>
+                        <input type="radio" name="question41" value="c">
+                        c: Both potential transformer and current transformer
+                      </label>
+                      <a href="#" id="explanation41c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer41d">
+                      <label>
+                        <input type="radio" name="question41" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation41d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Potential transformers are made with
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer42a">
+                      <label>
+                        <input type="radio" name="question42" value="a">
+                        a: Low quality icon core operating at very low flex density so that the magnetizing current may be large
+                      </label>
+                      <a href="#" id="explanation42a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer42b">
+                      <label>
+                        <input type="radio" name="question42" value="b">
+                        b: High quality icon core operating at very high flex density so that the magnetizing current may be large
+                      </label>
+                      <a href="#" id="explanation42b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer42c">
+                      <label>
+                        <input type="radio" name="question42" value="c">
+                        c: High quality icon core operating at very high flex density so that the magnetizing current may be very small
+                      </label>
+                      <a href="#" id="explanation42c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer42d">
+                      <label>
+                        <input type="radio" name="question42" value="d">
+                        d: High quality icon core operating at very low flex density so that the magnetizing current may be very small
+                      </label>
+                      <a href="#" id="explanation42d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Potential transformers are carefully designed to ensure
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer43a">
+                      <label>
+                        <input type="radio" name="question43" value="a">
+                        a: Minimum variation of voltage ratio with load and minimum phase shift between input and output voltages
+                      </label>
+                      <a href="#" id="explanation43a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer43b">
+                      <label>
+                        <input type="radio" name="question43" value="b">
+                        b: Minimum variation of voltage ratio with load and maximum phase shift between input and output voltages
+                      </label>
+                      <a href="#" id="explanation43b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer43c">
+                      <label>
+                        <input type="radio" name="question43" value="c">
+                        c: Maximum variation of voltage ratio with load and maximum phase shift between input and output voltages
+                      </label>
+                      <a href="#" id="explanation43c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer43d">
+                      <label>
+                        <input type="radio" name="question43" value="d">
+                        d: Maximum variation of voltage ratio with load and minimum phase shift between input and output voltages
+                      </label>
+                      <a href="#" id="explanation43d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    A high magnitude alternating current can be measured by a combination of _________ and_________.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer44a">
+                      <label>
+                        <input type="radio" name="question44" value="a">
+                        a: Potential transformer and a low range ammeter
+                      </label>
+                      <a href="#" id="explanation44a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer44b">
+                      <label>
+                        <input type="radio" name="question44" value="b">
+                        b: Current transformer and high range ammeter
+                      </label>
+                      <a href="#" id="explanation44b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer44c">
+                      <label>
+                        <input type="radio" name="question44" value="c">
+                        c: Current transformer and low range ammeter
+                      </label>
+                      <a href="#" id="explanation44c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer44d">
+                      <label>
+                        <input type="radio" name="question44" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation44d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The current transformer ratio is not equal to the ratio of secondary to primary turns.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer45a">
+                      <label>
+                        <input type="radio" name="question45" value="a">
+                        a: The above statement is false
+                      </label>
+                      <a href="#" id="explanation45a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer45b">
+                      <label>
+                        <input type="radio" name="question45" value="b">
+                        b: The above statement is false, because of the effect of magnetizing current
+                      </label>
+                      <a href="#" id="explanation45b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer45c">
+                      <label>
+                        <input type="radio" name="question45" value="c">
+                        c: The above statement is true, because of the effect of magnetizing current
+                      </label>
+                      <a href="#" id="explanation45c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer45d">
+                      <label>
+                        <input type="radio" name="question45" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation45d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    _________is used to make sure that an electrical circuit can be completely de-energized for service or maintenance.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer46a">
+                      <label>
+                        <input type="radio" name="question46" value="a">
+                        a: Circuit breaker
+                      </label>
+                      <a href="#" id="explanation46a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer46b">
+                      <label>
+                        <input type="radio" name="question46" value="b">
+                        b: Isolator
+                      </label>
+                      <a href="#" id="explanation46b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer46c">
+                      <label>
+                        <input type="radio" name="question46" value="c">
+                        c: Fuse
+                      </label>
+                      <a href="#" id="explanation46c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer46d">
+                      <label>
+                        <input type="radio" name="question46" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation46d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The major difference between an isolates and a circuit broken is that
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer47a">
+                      <label>
+                        <input type="radio" name="question47" value="a">
+                        a: A Circuit Breaker is an off load device insulated to be opened only after current has been interrupted by some other after control device
+                      </label>
+                      <a href="#" id="explanation47a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer47b">
+                      <label>
+                        <input type="radio" name="question47" value="b">
+                        b: An isolator is an off load device intended to be opened only after current has been interrupted by some other control device
+                      </label>
+                      <a href="#" id="explanation47b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer47c">
+                      <label>
+                        <input type="radio" name="question47" value="c">
+                        c: Both A Circuit Breaker is an off load device insulated to be opened only after current has been interrupted by some other after control device and An isolator is an off load device intended to be opened only after current has been interrupted by some other control device
+                      </label>
+                      <a href="#" id="explanation47c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer47d">
+                      <label>
+                        <input type="radio" name="question47" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation47d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Gas Insulated Switchgear (GIS) offers
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer48a">
+                      <label>
+                        <input type="radio" name="question48" value="a">
+                        a: High reliability, lower stability and maintenance free feature in much larger space compared with conventional switchgear.
+                      </label>
+                      <a href="#" id="explanation48a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer48b">
+                      <label>
+                        <input type="radio" name="question48" value="b">
+                        b: High reliability, higher safety and maintenance free feature in much larger space compared with conventional switchgear.
+                      </label>
+                      <a href="#" id="explanation48b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer48c">
+                      <label>
+                        <input type="radio" name="question48" value="c">
+                        c: High reliability, lower safety and maintenance free feature in much smaller space compared with conventional switchgear.
+                      </label>
+                      <a href="#" id="explanation48c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer48d">
+                      <label>
+                        <input type="radio" name="question48" value="d">
+                        d: High reliability, higher safety and maintenance free feature in much smaller space compared with conventional switchgear.
+                      </label>
+                      <a href="#" id="explanation48d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The space requirement of Gas Insulated Switchgear (GIS) can be less than ______ of the space taken up by an equivalent conventional installation.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer49a">
+                      <label>
+                        <input type="radio" name="question49" value="a">
+                        a: 5%
+                      </label>
+                      <a href="#" id="explanation49a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer49b">
+                      <label>
+                        <input type="radio" name="question49" value="b">
+                        b: 10%
+                      </label>
+                      <a href="#" id="explanation49b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer49c">
+                      <label>
+                        <input type="radio" name="question49" value="c">
+                        c: 25%
+                      </label>
+                      <a href="#" id="explanation49c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer49d">
+                      <label>
+                        <input type="radio" name="question49" value="d">
+                        d: 40%
+                      </label>
+                      <a href="#" id="explanation49d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    A ______ is a substation which does not contain transformers and operates only at a single voltage level.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer50a">
+                      <label>
+                        <input type="radio" name="question50" value="a">
+                        a: Transmission substation
+                      </label>
+                      <a href="#" id="explanation50a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer50b">
+                      <label>
+                        <input type="radio" name="question50" value="b">
+                        b: Switching substation
+                      </label>
+                      <a href="#" id="explanation50b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer50c">
+                      <label>
+                        <input type="radio" name="question50" value="c">
+                        c: Distribution substation
+                      </label>
+                      <a href="#" id="explanation50c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer50d">
+                      <label>
+                        <input type="radio" name="question50" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation50d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The apparatus used for switching, controlling and protecting the electrical circuit and equipment is known as
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer51a">
+                      <label>
+                        <input type="radio" name="question51" value="a">
+                        a: Control panels
+                      </label>
+                      <a href="#" id="explanation51a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer51b">
+                      <label>
+                        <input type="radio" name="question51" value="b">
+                        b: Metering panels
+                      </label>
+                      <a href="#" id="explanation51b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer51c">
+                      <label>
+                        <input type="radio" name="question51" value="c">
+                        c: Circuit breakers
+                      </label>
+                      <a href="#" id="explanation51c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer51d">
+                      <label>
+                        <input type="radio" name="question51" value="d">
+                        d: Switchgear
+                      </label>
+                      <a href="#" id="explanation51d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Switchgear consist of:
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer52a">
+                      <label>
+                        <input type="radio" name="question52" value="a">
+                        a: Switched, Fuses, CB, isolators
+                      </label>
+                      <a href="#" id="explanation52a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer52b">
+                      <label>
+                        <input type="radio" name="question52" value="b">
+                        b: Relay, control panels, metering panels
+                      </label>
+                      <a href="#" id="explanation52b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer52c">
+                      <label>
+                        <input type="radio" name="question52" value="c">
+                        c: Lightning arrestors, current transformers potential transformer etc
+                      </label>
+                      <a href="#" id="explanation52c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer52d">
+                      <label>
+                        <input type="radio" name="question52" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation52d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Functions of switchgear are
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer53a">
+                      <label>
+                        <input type="radio" name="question53" value="a">
+                        a: To localize the effects of faults by operation of protective equipment and so automatically disconnect faulty point from the system
+                      </label>
+                      <a href="#" id="explanation53a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer53b">
+                      <label>
+                        <input type="radio" name="question53" value="b">
+                        b: To break efficiently the short circuits without giving rise to dangerous conditions
+                      </label>
+                      <a href="#" id="explanation53b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer53c">
+                      <label>
+                        <input type="radio" name="question53" value="c">
+                        c: To facilitate the redistribution of local, inspection and maintenance on the system
+                      </label>
+                      <a href="#" id="explanation53c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer53d">
+                      <label>
+                        <input type="radio" name="question53" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation53d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Essential features of switchgear are
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer54a">
+                      <label>
+                        <input type="radio" name="question54" value="a">
+                        a: The switchgear must be able to discriminate between faulty and healthy section
+                      </label>
+                      <a href="#" id="explanation54a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer54b">
+                      <label>
+                        <input type="radio" name="question54" value="b">
+                        b: Quick operation and complete reliability
+                      </label>
+                      <a href="#" id="explanation54b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer54c">
+                      <label>
+                        <input type="radio" name="question54" value="c">
+                        c: Provision for manual control and instruments
+                      </label>
+                      <a href="#" id="explanation54c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer54d">
+                      <label>
+                        <input type="radio" name="question54" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation54d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                     __________ is a hollow insulating lines through which a conductor may pass .
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer55a">
+                      <label>
+                        <input type="radio" name="question55" value="a">
+                        a: Circuit breaker
+                      </label>
+                      <a href="#" id="explanation55a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer55b">
+                      <label>
+                        <input type="radio" name="question55" value="b">
+                        b: Isolator
+                      </label>
+                      <a href="#" id="explanation55b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer55c">
+                      <label>
+                        <input type="radio" name="question55" value="c">
+                        c: Bushing
+                      </label>
+                      <a href="#" id="explanation55c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer55d">
+                      <label>
+                        <input type="radio" name="question55" value="d">
+                        d: Feeder
+                      </label>
+                      <a href="#" id="explanation55d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Small porcelain bushing can be used up to _________
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer56a">
+                      <label>
+                        <input type="radio" name="question56" value="a">
+                        a: 12 kV
+                      </label>
+                      <a href="#" id="explanation56a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer56b">
+                      <label>
+                        <input type="radio" name="question56" value="b">
+                        b: 24 kV
+                      </label>
+                      <a href="#" id="explanation56b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer56c">
+                      <label>
+                        <input type="radio" name="question56" value="c">
+                        c: 36 kV
+                      </label>
+                      <a href="#" id="explanation56c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer56d">
+                      <label>
+                        <input type="radio" name="question56" value="d">
+                        d: 98 kV
+                      </label>
+                      <a href="#" id="explanation56d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The inside of the bushing may contain __________ and the bushing is often filled with ________ to provide additional insulation.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer57a">
+                      <label>
+                        <input type="radio" name="question57" value="a">
+                        a: Copper, mercury
+                      </label>
+                      <a href="#" id="explanation57a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer57b">
+                      <label>
+                        <input type="radio" name="question57" value="b">
+                        b: Copper ,paper
+                      </label>
+                      <a href="#" id="explanation57b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer57c">
+                      <label>
+                        <input type="radio" name="question57" value="c">
+                        c: Paper insulation, oil
+                      </label>
+                      <a href="#" id="explanation57c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer57d">
+                      <label>
+                        <input type="radio" name="question57" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation57d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Bus bar can be arranged in ____________
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer58a">
+                      <label>
+                        <input type="radio" name="question58" value="a">
+                        a: Single bus-bar system
+                      </label>
+                      <a href="#" id="explanation58a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer58b">
+                      <label>
+                        <input type="radio" name="question58" value="b">
+                        b: Double bus-bar system with sectionalisation
+                      </label>
+                      <a href="#" id="explanation58b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer58c">
+                      <label>
+                        <input type="radio" name="question58" value="c">
+                        c: Both single bus-bar system and double bus-bar system with sectionalisation
+                      </label>
+                      <a href="#" id="explanation58c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer58d">
+                      <label>
+                        <input type="radio" name="question58" value="d">
+                        d: None
+                      </label>
+                      <a href="#" id="explanation58d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    The major advantage of single bus-bar system is that fault on one part of the bus'bar or system does not completely shut down the whole station.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer59a">
+                      <label>
+                        <input type="radio" name="question59" value="a">
+                        a: False
+                      </label>
+                      <a href="#" id="explanation59a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer59b">
+                      <label>
+                        <input type="radio" name="question59" value="b">
+                        b: True
+                      </label>
+                      <a href="#" id="explanation59b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                     _________ is a device which is used to switch from one bus to the other without any interruption in power supply and without creating hazardous arcs.
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer60a">
+                      <label>
+                        <input type="radio" name="question60" value="a">
+                        a: Isolator
+                      </label>
+                      <a href="#" id="explanation60a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer60b">
+                      <label>
+                        <input type="radio" name="question60" value="b">
+                        b: Circuit breaker
+                      </label>
+                      <a href="#" id="explanation60b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer60c">
+                      <label>
+                        <input type="radio" name="question60" value="c">
+                        c: Bus coupler
+                      </label>
+                      <a href="#" id="explanation60c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer60d">
+                      <label>
+                        <input type="radio" name="question60" value="d">
+                        d: Any of the them
+                      </label>
+                      <a href="#" id="explanation60d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+                
+                  <div class="question ">
+                    Lighting arrestor are also called as __________
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer61a">
+                      <label>
+                        <input type="radio" name="question61" value="a">
+                        a: Capacitive detector
+                      </label>
+                      <a href="#" id="explanation61a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer61b">
+                      <label>
+                        <input type="radio" name="question61" value="b">
+                        b: Charge inhibitor
+                      </label>
+                      <a href="#" id="explanation61b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer61c">
+                      <label>
+                        <input type="radio" name="question61" value="c">
+                        c: Surge arrestor
+                      </label>
+                      <a href="#" id="explanation61c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer61d">
+                      <label>
+                        <input type="radio" name="question61" value="d">
+                        d: All
+                      </label>
+                      <a href="#" id="explanation61d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+               </div>
+                <button id="submit" class="btn btn-primary">Submit Quiz</button>
+                <div id="results"></div>
+          </div>
+            
+            <script>
+              const myQuestions = [{"question":"The maximum generated voltage in power generating stations in advanced countries is 33kV while that in India is _________","answers":{"a":"6kV","b":"9kV","c":"11kV","d":"44kV"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"The transmission lines and feeders are _____________ .","answers":{"a":"2-phase 2-wire circuit","b":"3-phase 3-wire circuit","c":"Both (a) and (b)","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"b","difficulty":""},{"question":"The transmission lines are _____________","answers":{"a":"3-phase 4-wire circuits","b":"2-phase 2-wire circuits","c":"3-phase 3-wire circuits","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"a","difficulty":""},{"question":"________ are lines conductors which connect the distribution substations to the areas, to be fed by those distribution substations.","answers":{"a":"Service mains","b":"Distributors","c":"Feeders","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"________ are the terminals which connect the consumer�s terminals to the distributors","answers":{"a":"Service mains","b":"Distributors","c":"Feeders","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"a","difficulty":""},{"question":"In AC-system ,","answers":{"a":"Electric power can be generated at high voltage","b":"Stepping-up and stepping down of an AC voltage can be done easily and efficiently with the help of transformers","c":"Transformer line construction is comparatively difficult and the amount of copper required is comparatively more","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"In AC system,","answers":{"a":"There is a need to synchronize the alternators before they are put in parallel","b":"As a result of skin effect, the resistance of the line is increased","c":"In order to avoid corona loss and also to provide adequate amount of insulation in case of overhead lines, more spacing between the conductors is required","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Statement 1:- The best method is to use AC system for generation and distribution purpose and DC system for transmission purpose.<br>Statement 2:- The best method is to use DC system for generation and distribution purpose and AC system for transmission purpose.","answers":{"a":"Statement 1 is true and Statement 2 is false","b":"Statement 1 is false and Statement 2 is false","c":"Statement 1 is false and Statement 2 is true","d":"Statement 1 is false and Statement 2 is false"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"a","difficulty":""},{"question":"Underground cables are rarely used for","answers":{"a":"Detection of fault is tough","b":"Installation costs are very high","c":"More suitable for short distance","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Important component of overhead lines is","answers":{"a":"Conductors","b":"Supports and cross-arms","c":"Insulators","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"The characteristics that conductors used for transmission and distribution should posses :","answers":{"a":"High tensile strength and low sensitivity","b":"Low specific gravity","c":"Low cost","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Hard drawing of copper __________ electrical conductivity by small amount but it ___________ the tensile strength considerably.","answers":{"a":"Increases, decreases","b":"Decreases, increases","c":"Both increases, decreases and Decreases, increases in some cases","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"b","difficulty":""},{"question":"Copper conductor is","answers":{"a":"Homogenous material","b":"Highly durable and has high scrap value","c":"It has high current density, so lesser X-sectional area of conductor is required","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Aluminium is ______________ in weight as compared to copper, but has _________ conductivity and tensile strength.","answers":{"a":"Heavier, Smaller","b":"Heavier, Greater","c":"Lighter, Greater","d":"Lighter, Smaller"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"The sag in aluminium conductors is __________ the copper conductors.","answers":{"a":"Lesser than","b":"Equal to","c":"Greater than","d":"2 times lesser than"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"The advantages of using aluminium conductors steel reinforced over aluminium conductor is ________","answers":{"a":"Tensile strength is increased","b":"Skin effect is greatly increased","c":"Both tensile strength is increased and skin effect is greatly increased","d":"None of the above"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"a","difficulty":""},{"question":"Choose the proper set of increases order of mechanical strength of the following line supports :","answers":{"a":"Wooden poles > steel poles > steel towers > R.C.C poles","b":"Wooden poles > steel towers > steel poles > R.C.C poles","c":"Wooden poles > steel poles >R.C.C poles > steel towers","d":"Wooden poles > R.C.C poles >steel poles > steel towers"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"Characteristics of an insulator used in overhead lines are","answers":{"a":"It should have high electric strength","b":"High ratio of rapture strength to flash over voltage","c":"High mechanical strength","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"A good porcelain insulator has compressive strength of about _________ and dielectric strength of _________ of its thickness.","answers":{"a":"70 N/m2 , 6kV/cm","b":"700 N/m2 , 6kV/cm","c":"7000 N/m2 , 6kV/cm","d":"7000 N/m2 , 60kV/cm"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Glass insulators, can be used up to _________ under normal atmospheric conditions, and in dry atmosphere, it can be used up to __________ .","answers":{"a":"2.5kV, 5kV","b":"2.5kV,250kV","c":"25kV, 250kV","d":"25kV, 50kV"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Steatite is produced by mixing ___________ with small proton of ________ and ___________.","answers":{"a":"Hydrated magnesium silicate,carbon,nitrogen","b":"Hydrated magnesium silicate,carbon,clay","c":"Hydrated magnesium silicate,nitrogen,clay","d":"Hydrated magnesium silicate, clay, felspar"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"In a pin type insulator,","answers":{"a":"Insulators made of glass are generally used for low voltages","b":"Insulators made of poralain can be used up to a 90kv but are rarely used on lines above 60kV","c":"Both insulators made of glass are generally used for low voltages and insulators","d":"None of the above"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"The factor affecting the sag in overhead lines are","answers":{"a":"Weight of the conductor","b":"Span length","c":"Temperature","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Due to skin effect, the total resistance of the conductor _________, as the frequency of the current ________ and also with the increases in the diameter of the conductor.","answers":{"a":"Increases ,Increases ,Increases","b":"Decreases ,Increases ,Decreases","c":"Increases ,Decreases ,Increases","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"a","difficulty":""},{"question":"The skin effect is negligible when the supply frequency is ________ and the conductor diameter is _________.","answers":{"a":"High, Large","b":"High, Small","c":"Low ,Small","d":"Low ,Large"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"The alternating magnetic flues in a conductor caused by the current flowing in a neighbouring conductor gives rise to circulating currents which cause an apparent increases in the resistance of the conductor. This phenomena is called ________ .","answers":{"a":"Skin effect","b":"Corona effect","c":"Proximity effect","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"The factor which effect skin and proximity effects are ______________","answers":{"a":"Frequency of the current","b":"Permeability of the conductor material","c":"Size of the conductor and distance between the conductors","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Usually in short transmission lines ___________","answers":{"a":"Length is less than 50km","b":"Operating voltage is less than 20kV","c":"Both length is less than 50km and operating voltage is less than 20kV","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"In medium transmission lines","answers":{"a":"Length is between 50 km and 160km","b":"Operating voltage is between 21kV and 100kV","c":"Both length is between 50 km and 160km and operating voltage is between 21kV and 100kV","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"In long transmission lines","answers":{"a":"Length is more than 160km","b":"Operating voltage is above 100kV","c":"Both length is more than 160km and operating voltage is above 100kV","d":"None of the above"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"In oil circuit breaker (O.C.B) the range exists between","answers":{"a":"75MVA at 2.5 kV and 50000MVA at 250kV","b":"7.5MVA at 2.5 kV and 50000MVA at 250kV","c":"250MVA at 2.5 kV and 5000MVA at 250kV","d":"25MVA at 2.5 kV and 5000MVA at 250kV"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Advantages of using Air blast Circuit breakers:","answers":{"a":"Current chapping","b":"Sensitivity to restricting voltage","c":"Short arc duration","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"In SF6 Circuit breaker","answers":{"a":"No risk of fire","b":"No reduction of dielectric strength","c":"Current chopping tendency is minimized","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"The voltage across the contacts during the arcing period is known as _______","answers":{"a":"Recovery voltage","b":"Restriking voltage","c":"Arc voltage","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"The transient voltage appearing across the contacts during arc period is called ________","answers":{"a":"Recovery voltage","b":"Restriking voltage","c":"Arc voltage","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"b","difficulty":""},{"question":"When low inductive current is interrupted by a Circuit breaker and the arc generating force of the Circuit breaker and is more than necessary to interrupt a low magnitude of current, the current will be interrupted before its natural zero instant. It is termed as","answers":{"a":"Restriking","b":"Recovery instant","c":"Current chopping","d":"Arcing voltage"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"_______ is the r.m.s value of current which the Circuit breaker is capable of carrying continuously at its rated frequency under specified conditions.","answers":{"a":"Breaking capacity","b":"Making capacity","c":"Short-time capacity","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"The peak value of current (including the DC component) during first cycle of current wave after the closure of Circuit breaker is known as __________.","answers":{"a":"Breaking capacity","b":"Making capacity","c":"Short-time capacity","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"b","difficulty":""},{"question":"__________ is the current (r.m.s value) that a Circuit breaker is capable of breaking under specified conditions and given recovery voltage.","answers":{"a":"Breaking capacity","b":"Making capacity","c":"Short-time capacity","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"a","difficulty":""},{"question":" __________ of a Circuit breaker depends upon its ability to withstand the temperature rise and the electromagnetic force effects.","answers":{"a":"Breaking capacity","b":"Making capacity","c":"Short-time capacity","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"Advantage of using instrument Transformer is","answers":{"a":"Standard rated instruments may be used easily","b":"It provides safety for operating personal","c":"Both standard rated instruments may be used easily and it provides safety for operating personal","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"Instrument transformers are classified as:","answers":{"a":"Potential transformer","b":"Current transformer","c":"Both potential transformer and current transformer","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"Potential transformers are made with","answers":{"a":"Low quality icon core operating at very low flex density so that the magnetizing current may be large","b":"High quality icon core operating at very high flex density so that the magnetizing current may be large","c":"High quality icon core operating at very high flex density so that the magnetizing current may be very small","d":"High quality icon core operating at very low flex density so that the magnetizing current may be very small"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Potential transformers are carefully designed to ensure","answers":{"a":"Minimum variation of voltage ratio with load and minimum phase shift between input and output voltages","b":"Minimum variation of voltage ratio with load and maximum phase shift between input and output voltages","c":"Maximum variation of voltage ratio with load and maximum phase shift between input and output voltages","d":"Maximum variation of voltage ratio with load and minimum phase shift between input and output voltages"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"a","difficulty":""},{"question":"A high magnitude alternating current can be measured by a combination of _________ and_________.","answers":{"a":"Potential transformer and a low range ammeter","b":"Current transformer and high range ammeter","c":"Current transformer and low range ammeter","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"The current transformer ratio is not equal to the ratio of secondary to primary turns.","answers":{"a":"The above statement is false","b":"The above statement is false, because of the effect of magnetizing current","c":"The above statement is true, because of the effect of magnetizing current","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"_________is used to make sure that an electrical circuit can be completely de-energized for service or maintenance.","answers":{"a":"Circuit breaker","b":"Isolator","c":"Fuse","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"b","difficulty":""},{"question":"The major difference between an isolates and a circuit broken is that","answers":{"a":"A Circuit Breaker is an off load device insulated to be opened only after current has been interrupted by some other after control device","b":"An isolator is an off load device intended to be opened only after current has been interrupted by some other control device","c":"Both A Circuit Breaker is an off load device insulated to be opened only after current has been interrupted by some other after control device and An isolator is an off load device intended to be opened only after current has been interrupted by some other control device","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"b","difficulty":""},{"question":"Gas Insulated Switchgear (GIS) offers","answers":{"a":"High reliability, lower stability and maintenance free feature in much larger space compared with conventional switchgear.","b":"High reliability, higher safety and maintenance free feature in much larger space compared with conventional switchgear.","c":"High reliability, lower safety and maintenance free feature in much smaller space compared with conventional switchgear.","d":"High reliability, higher safety and maintenance free feature in much smaller space compared with conventional switchgear."},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"The space requirement of Gas Insulated Switchgear (GIS) can be less than ______ of the space taken up by an equivalent conventional installation.","answers":{"a":"5%","b":"10%","c":"25%","d":"40%"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"b","difficulty":""},{"question":"A ______ is a substation which does not contain transformers and operates only at a single voltage level.","answers":{"a":"Transmission substation","b":"Switching substation","c":"Distribution substation","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"b","difficulty":""},{"question":"The apparatus used for switching, controlling and protecting the electrical circuit and equipment is known as","answers":{"a":"Control panels","b":"Metering panels","c":"Circuit breakers","d":"Switchgear"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Switchgear consist of:","answers":{"a":"Switched, Fuses, CB, isolators","b":"Relay, control panels, metering panels","c":"Lightning arrestors, current transformers potential transformer etc","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Functions of switchgear are","answers":{"a":"To localize the effects of faults by operation of protective equipment and so automatically disconnect faulty point from the system","b":"To break efficiently the short circuits without giving rise to dangerous conditions","c":"To facilitate the redistribution of local, inspection and maintenance on the system","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":"Essential features of switchgear are","answers":{"a":"The switchgear must be able to discriminate between faulty and healthy section","b":"Quick operation and complete reliability","c":"Provision for manual control and instruments","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"d","difficulty":""},{"question":" __________ is a hollow insulating lines through which a conductor may pass .","answers":{"a":"Circuit breaker","b":"Isolator","c":"Bushing","d":"Feeder"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"Small porcelain bushing can be used up to _________","answers":{"a":"12 kV","b":"24 kV","c":"36 kV","d":"98 kV"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"The inside of the bushing may contain __________ and the bushing is often filled with ________ to provide additional insulation.","answers":{"a":"Copper, mercury","b":"Copper ,paper","c":"Paper insulation, oil","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"Bus bar can be arranged in ____________","answers":{"a":"Single bus-bar system","b":"Double bus-bar system with sectionalisation","c":"Both single bus-bar system and double bus-bar system with sectionalisation","d":"None"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"The major advantage of single bus-bar system is that fault on one part of the bus'bar or system does not completely shut down the whole station.","answers":{"a":"False","b":"True"},"explanations":{"a":"","b":""},"correctAnswer":"b","difficulty":""},{"question":" _________ is a device which is used to switch from one bus to the other without any interruption in power supply and without creating hazardous arcs.","answers":{"a":"Isolator","b":"Circuit breaker","c":"Bus coupler","d":"Any of the them"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""},{"question":"Lighting arrestor are also called as __________","answers":{"a":"Capacitive detector","b":"Charge inhibitor","c":"Surge arrestor","d":"All"},"explanations":{"a":"","b":"","c":"","d":""},"correctAnswer":"c","difficulty":""}];
+            </script>
+              <script src="./assets/js/assessment_v2.js"></script>  
+          <div class="bug-report-mobile">
+              <bug-report id="bug-report" title="[BUG REPORT] DEVELOPMENT OF 11KV/433 VOLTS SUBSTATION AUTOMATION USING PLC FOR NORMAL LOAD
+          OPERATION" page-type="assesment" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;NITK&quot;,&quot;expname&quot;:&quot;DEVELOPMENT OF 11KV/433 VOLTS SUBSTATION AUTOMATION USING PLC FOR NORMAL LOAD\nOPERATION&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" position="override" button_style="
+                          position: fixed; 
+                          bottom: 20px;
+                          right: 20px;
+                          z-index: 1;
+                          font-size: 0;
+                          padding: 25px;
+                          border-radius: 50%;
+                          border: none;
+                          background-color: #0fc0ff;
+                          background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAABiFJREFUaEPFmVuMFEUUhv/TM7uwoBGVyG22u7ZnYGG5REETo8RA1BhFIka8ABFf0PCgDxhFEpCLqAlE1OiTiSj4gFGjD0QBETQaEqPRICALSHdPV+8YQQJBA+wuO1PHdMNcWGame2ZWqMfuc/nq1KlT1acJAzhShjFVAUsYdL8G3HjRdA7gHwna5uahLR91dnaeb9QlNWrA1+/o6GjuPnv2DQ30LICKNhk4qLF63PK8g434rejATJhjKa6m9WazOzOZzKlKTmYAcc8QnxEwJwqIAk5STpvpZJwD1eTHjR43PKflhtkZ2+ovVxbaTJiTSVM/gzCYGIebu4fc1nmi80w5J0nDWA7Qq1GACzLMR3pV7pZMJtNdTs/UzelE6msAQ0BYb7vuS6VyZaGTungGhPfygkRYZ7nusv4OEonEDc2xuEfA0JqgATBhieO6b/fXE0IM1pgPECgVvGP+x/bksFDo1JhUguPZI8FMAz0+zzFtSjqd9p8VRlJvew7E79QKHNgEDjrSndRfNyXEGmasLK4KttmeOysU2hdIGm0vA/xKUZh32VLeW6psCrGMmO+uB5qIeEh398P7jx8/m9cP9pGm9vtpmQ9WjHDzUSkPRYJOpVKDuK9vP0Dj8goMfsSR8ot6IKPoJI22XUBpEHitLWUx6heNVC15pmHMItCXBYeKPUZsLlFWVYNQsVg2nU7v82XaW1tHZ4lGhUEztOlEKOQ4A/b5XHZyuc0aWqdNIbYSY3aY00veM/9te3KE/ywlxGpmrKpJP8h5ftCR8qtyeqHQY3XdVNAO5vMskvMGoRWrT9Ke90QlX6HQF6N16Y4OI28Ampn/jatcxx+ZzJ8NQScSiZZBWvzJwAhhJoCKUQhkaoVmnAZoJcC9WowOH02nf6gWl0iRLpQk3ZwOym0n0DVVg10rNAAF7Ig1xedYltUbtpCRoZO6Po1J+z7S6VcHdLCIClusLnfBgED7NVv1ZX8lYGKYwbrSo8Qogxc4Um5pOD1Mo20DgZ+PBFxPTpcYJuBUljDRdd1jdW/EcYnEmKwWSxNR05WADnwo2mB3pV+oGzopxDowlkYGbjDSF9ILpwd1D2mtdB2uuhEv3D+yfwG4/opCB5WVnrZk+v1yfqtCJ3X9TpC2pybggYj0BYcf29KdXwe0WArCuqsCzSxtT4qq0GareStIXXo3JjxGwNSrAh0crMFFq3jYEJ9wpPygkB6mYZwg0PCaAcsp1Hm4RPFtS5eK0LpxvqayVs3DlYIO7r0K8xUhlufRGKNrupLmFQcImsEZBhWaOxq4y5ZyRvXqIcSnYDwaZdkukRkgaGqK32RZ1on+/qt/buliFRFWXxXokonXBJ3S22Yz8darAc2sdjqed1/NddpvnMQUHwPRdTWBD0R6EBbbrltoGJX6D71PJ3V9E0h76kpCMzirNTWNLpfPPkcodNDXi6m9QLGqhE6gwUgzaKMj04sq+QmF9hVrjnYj0IwejmvtjuN4DUEbhjEqztgLoqCXEToagQavsKV8rZqPSJH2DaSEmMGMXZHSpE5oZnzneK7fL8w1DJ1sTU6CltvEwPj/88OWwRYx77Y9b3HD0KYuvqUL/Y5oo85I542TooesrnTF8yE0PUwh5hGj6tfxZTNpEBqKvUE9QyfW9bnV3t5+bV9P7yECxuTBFGOvRn5v5eJgTLzsUhUFmuGCcLJoBiNL/ZT7bVFYiWrrnTSM9QC9WBSmzy2ZnluqI4QYGQcWM/O8Qi+7EjSjB4xtTNqHjuf4HVHO20q1tiZZi/k/j1r8Z8zcRxyfanfZv/dnrJgeYw1jQo6xr+SOfY5j2oRq9VMIIWLA7QSMslz3raDGG8ZMJhoPpR1QmvrFdd2eSoFKGm0rAF5bfM97bCnvKp2c/64idFLXd4C0woWFwMstKV+PthPrk/L/R/aeOfcbCBOKq8uLLCk3llos/0tON+8hUt+U5O1Rao5PjtIcrA+3qOWvDEC78wFlIO1I1wyFTuptC0G8uWSZHrCl3N4oUFT9NiE2a4yFQW6DLUfKsaHQU0aMGHq2pWULM98Bpncdzy35yxXVdf1yftXK9vS8CUVjtBjWHHXdn0qt/Qf/x1JblU8EiAAAAABJRU5ErkJggg==);
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          background-size: 30px;
+                          filter: invert(1);">
+              </bug-report>
+          </div>        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fab fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fab fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fab fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fab fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+    <script src="./assets/js/toggleSidebar.js"></script>
+    <script src="./assets/js/event-handler.js"></script>
+
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  
+
+<script type="module" src="https://virtual-labs.github.io/svc-bug-report/client/src/bug-report.js"></script><script type="module" src="plugins/svc-rating/index.js"></script><script type="module" src="plugins/svc-rating/config.js"></script><script type="module" src="https://apis.google.com/js/api.js"></script></body></html>
